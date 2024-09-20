@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'League';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('data/league-spartan-master/webfonts/leaguespartan-bold.woff2') format('woff2'), url('data/league-spartan-master/webfonts/leaguespartan-bold.woff') format('woff');
+  }
+  
+
+
+body
+{
+    font-family: 'League';
+    color: white;
+    margin: 0;
+    background: #0E1717;
+    background: radial-gradient(center, #0E1717, #172525);
+}
+
+.navbar
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background: #0E1717;
+    /* border: 1px solid white; */
+    padding-top: 5%;
+    margin-bottom: 50%;
+    
+}
+
+.navbar-left
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    font-size: 28px;
+    margin-left: 5%;
+}
+
+.navbar-right
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    font-family: 'Roboto';
+    margin-right: 5%;
+}
+
+.navbar-right a
+{
+    margin: 2%;
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.navbar-right a:hover
+{
+    color: #a50000;
+}
+
+.content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+
+@media screen and (max-width: 600px)
+{
+
+    .navbar-left
+    {
+        font-size: 24px;
+        width: 10%;
+    }
+    
+}
