@@ -16,6 +16,25 @@ body
     background: radial-gradient(center, #0E1717, #172525);
 }
 
+.sidebar
+{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* border: 1px solid white; */
+    height: 100vh;
+    justify-content: center;
+
+}
+
+.sidebar a
+{
+    margin-top: 50%;
+    margin-left: 5%;
+}
+    
+
+
 .navbar
 {
     display: flex;
@@ -24,9 +43,8 @@ body
     width: 100%;
     position: fixed;
     background: #0E1717;
-    /* border: 1px solid white; */
-    padding-top: 2%;
-    /* margin-bottom: 50%; */
+    border: 1px solid white;
+    
     
 }
 
