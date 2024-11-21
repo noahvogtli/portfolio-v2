@@ -1,12 +1,11 @@
-@font-face {
+@font-face 
+{
     font-family: 'League';
     font-style: normal;
     font-weight: 400;
     src: local(''), url('data/league-spartan-master/webfonts/leaguespartan-bold.woff2') format('woff2'), url('data/league-spartan-master/webfonts/leaguespartan-bold.woff') format('woff');
-  }
+}
   
-
-
 body
 {
     font-family: 'League';
@@ -33,8 +32,6 @@ body
     margin-left: 5%;
 }
     
-
-
 .navbar
 {
     display: flex;
@@ -44,6 +41,7 @@ body
     position: fixed;
     background: #0E1717;
     border: 1px solid white;
+    padding-top: 2%;
     
     
 }
@@ -69,7 +67,6 @@ body
     justify-content: flex-end;
     font-family: 'Roboto';
     margin-right: 5%;
-
 }
 
 .navbar-right a
@@ -86,18 +83,49 @@ body
     color: #a50000;
 }
 
-.sidebar {
-    position: fixed;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+.sidebar 
+{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 50vh;
+    position: fixed;
     border: 1px solid white;
-  }
-  
+    height: 100vh;
+    justify-content: center;
+    margin-left: 0;
+
+}
+
+.sidebar a
+{
+    margin-top: 40%;
+    margin-bottom: 30%;
+
+}
+
+.content
+{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 10%;
+}
+
+.bar
+{
+    height: 15%;
+    width: 45%;
+    border-right: 1px solid white;
+
+}
+
+.sidebar svg:hover
+{ 
+fill: rgb(206, 20, 20);
+}
+
+.bar:hover 
+{ 
+border-right: 1px solid red; /* Change the border color to red on hover */ 
+}
 
 
 
