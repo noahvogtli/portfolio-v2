@@ -28,8 +28,9 @@ body
     width: 100%;
     position: fixed;
     background: #0E1717;
-    padding-top: 2%;
+    /* padding-top: 1%; */
     z-index: 1;
+    /* border: 1px solid white; */
 }
 
 .navbar-left
@@ -41,6 +42,34 @@ body
     justify-content: flex-start;
     font-size: 28px;
     margin-left: 5%;
+
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 5%;
+  color: #ffffff;
+  transition: color 0.5s ease;
+}
+
+.logo:hover {
+  cursor: pointer;
+  color: #a50000;
+}
+
+
+.background-logo
+{
+  width: 500px;
+  height: 500px;
+  transition: color 0.75s ease-out;
+  border: none;
+}
+
+.background-logo:hover
+{
+  color: #a50000;
 
 }
 
@@ -59,7 +88,7 @@ body
     margin: 2%;
     text-decoration: none;
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 18px;
 }
 
@@ -91,7 +120,7 @@ body
 {
     margin-left: 20%;
     margin-right: 20%;
-    padding-top: 15%;
+    padding-top: 10%;
     word-wrap: break-word; /* This property ensures that long words will wrap onto the next line */ 
     overflow-wrap: break-word;
     height: 500vh;
@@ -107,17 +136,20 @@ body
 
 .sidebar svg:hover
 { 
-    fill: #a50000;
+    fill: rgb(165, 0, 0);
+    transition: fill 0.5s ease;
 }
 
 .bar:hover 
 { 
-border-right: 1px solid #a50000;
+  border-right: 1px solid #a50000;
+  transition: border-right 0.5s ease;
 }
 
 .title
 {
     font-size: 84px;
+    font-style: italic;
 }
 
 .subtitle
@@ -199,7 +231,7 @@ border-right: 1px solid #a50000;
 {
     display: flex;
     flex-direction: row;
-    justify-content:left;
+    justify-content:center;
     flex-wrap: wrap;
 }
 
@@ -215,6 +247,27 @@ border-right: 1px solid #a50000;
     margin-top: 2%;
     margin-right: 1%;
     font-size: 18px;
+}
+
+.resume-button
+{
+  background:none;
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #a50000;
+  color: #a50000;
+  padding: 1% 2%;
+  margin-top: 2%;
+  margin-right: 1%;
+  font-size: 18px;
+}
+
+.resume-button:hover
+{
+  background: #a50000;
+  color: white;
+  cursor: pointer;
 }
   
 
