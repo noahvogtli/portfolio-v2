@@ -95,6 +95,7 @@ body
 .navbar-right a:hover
 {
     color: #a50000;
+    cursor: pointer;
 }
 
 .sidebar 
@@ -282,7 +283,12 @@ body
 
 .close-contact
 {
-
+  width: 7.5vw;
+  height: 5vh;
+  background: #0E1717;
+  color: white;
+  border-radius: 5px;
+  font-family: "Mulish";
 }
 
 .close-contact:hover
@@ -292,8 +298,81 @@ body
 
 .contact-modal
 {
-
+  background: whitesmoke;
+  width: 25vw;
+  height: 60vh;
+  border-radius: 10px;
+  text-align: left;
 }
+
+.contact-modal input
+{
+  width: 40%;
+  height: 3vh;
+  border-radius: 5px;
+  margin-bottom: 5%;
+  padding-left: 1vh;
+}
+
+
+.contact-div
+{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 70%;
+  /* border: 1px solid black; */
+}
+
+.contact-div label
+{
+  font-size: 18px;
+  margin-bottom: 2%;
+  display: block;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.name-div
+{
+  display: flex; 
+  /* border: 1px solid black; */
+  justify-content: space-between;
+}
+
+.name-div div
+{
+  /* border: 1px solid black; */
+  flex-grow: 1;
+}
+
+.name-div input
+{
+  width: 90%;
+  height: 3vh;
+}
+
+.submit-contact
+{
+  width: 7.5vw;
+  height: 5vh;
+  background: #0E1717;
+  color: white;
+  border-radius: 5px;
+  font-family: "Mulish";
+}
+
+.submit-contact:hover
+{
+  cursor: pointer;
+}
+
+.contact-message
+{
+  font-family: "Mulish";
+}
+
   
 
 
