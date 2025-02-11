@@ -104,7 +104,7 @@ body
     flex-direction: column;
     position: fixed;
     /* border: 1px solid white; */
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
     margin-left: 1%;
 
@@ -124,7 +124,7 @@ body
     padding-top: 10%;
     word-wrap: break-word; /* This property ensures that long words will wrap onto the next line */ 
     overflow-wrap: break-word;
-    height: 500vh;
+    margin-bottom: 10%;
 }
 
 .bar
@@ -151,6 +151,8 @@ body
 {
     font-size: 84px;
     font-style: italic;
+    margin-top: 0; 
+    /* border: 1px solid white; */
 }
 
 .subtitle
@@ -158,6 +160,8 @@ body
     font-size: 18px;
     font-style: italic;
     margin-bottom: 10%;
+    /* border: 1px solid white; */
+    width: 25vw;
 }
 
 /* About me button */
@@ -300,7 +304,7 @@ body
 {
   background: whitesmoke;
   width: 25vw;
-  height: 60vh;
+  height: 65vh;
   border-radius: 10px;
   text-align: left;
 }
@@ -373,9 +377,53 @@ body
   font-family: "Mulish";
 }
 
-  
+.projects-div
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  text-align: center;
+}
 
+.projects-box
+{
+  background:none;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #a50000;
+  color: white;
+  padding: 1% 2%;
+  margin-top: 2%;
+  margin-right: 1%;
+  font-size: 18px;
+}
 
+.experience-div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  margin: 0 auto;
+  /* border: 1px solid white;  */
+}
+
+.experience-box
+{
+  background:none;
+  border: 2px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #a50000;
+  color: white;
+  padding: 1% 2%;
+  font-size: 18px;
+  text-align: left;
+}
 
 @media screen and (max-width: 600px)
 {
@@ -384,6 +432,11 @@ body
     {
         font-size: 24px;
         width: 10%;
+    }
+
+    .sidebar
+    {
+        display: none;
     }
     
 }
