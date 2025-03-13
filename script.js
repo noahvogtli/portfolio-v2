@@ -1,9 +1,18 @@
 const modal = document.getElementById('contact-modal')
 const openmodal = document.getElementById('open-contact')
+const sidebarContact = document.getElementById('sidebar-contact')
+const mobileContactBtn = document.getElementById('mobile-contact-btn')
 const closemodal = document.getElementById('close-contact')
 
-openmodal.addEventListener('click', () => {
+function openContactModal() {
     modal.showModal();
+}
+
+openmodal.addEventListener('click', openContactModal)
+sidebarContact.addEventListener('click', openContactModal)
+mobileContactBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    openContactModal();
 })
 
 closemodal.addEventListener('click', () => {

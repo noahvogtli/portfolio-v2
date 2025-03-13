@@ -301,74 +301,95 @@ body
 
 .contact-modal
 {
-  background: whitesmoke;
+  background: #1a2626;
   width: 25vw;
   height: 65vh;
-  border-radius: 10px;
+  border-radius: 15px;
   text-align: left;
+  border: 1px solid rgba(165, 0, 0, 0.3);
+  box-shadow: 0 0 20px rgba(165, 0, 0, 0.1);
+  padding: 2rem;
+  color: white;
 }
 
-.contact-modal input
-{
-  width: 40%;
-  height: 3vh;
-  border-radius: 5px;
-  margin-bottom: 5%;
-  padding-left: 1vh;
+.contact-modal h1 {
+  color: white;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(165, 0, 0, 0.3);
+  padding-bottom: 0.5rem;
 }
 
-
-.contact-div
-{
+.name-div {
   display: flex;
-  flex-direction: column;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  height: 70%;
-  /* border: 1px solid black; */
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.contact-div label
-{
-  font-size: 18px;
-  margin-bottom: 2%;
-  display: block;
-  font-weight: bold;
-  font-style: italic;
+.name-div div {
+  flex: 1;
 }
 
-.name-div
-{
-  display: flex; 
-  /* border: 1px solid black; */
-  justify-content: space-between;
+.contact-modal input,
+.contact-modal textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(165, 0, 0, 0.2);
+  color: white;
+  font-family: "Mulish";
+  transition: all 0.3s ease;
 }
 
-.name-div div
-{
-  /* border: 1px solid black; */
-  flex-grow: 1;
-}
-
-.name-div input
-{
+.contact-modal input {
+  height: 2vh;
   width: 90%;
-  height: 3vh;
 }
 
-.submit-contact
-{
+.contact-modal textarea {
+  height: 15vh;
+  width: 95%;
+  resize: none;
+}
+
+.contact-div label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.submit-contact,
+.close-contact {
   width: 7.5vw;
   height: 5vh;
-  background: #0E1717;
+  background: #a50000;
   color: white;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: "Mulish";
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
 }
 
-.submit-contact:hover
-{
-  cursor: pointer;
+.submit-contact:hover,
+.close-contact:hover {
+  background: #8b0000;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(165, 0, 0, 0.2);
+}
+
+.close-contact {
+  background: transparent;
+  border: 1px solid #a50000;
+  margin-left: 1rem;
+}
+
+.close-contact:hover {
+  background: rgba(165, 0, 0, 0.1);
 }
 
 .contact-message
@@ -554,6 +575,15 @@ body
         width: 90%;
         margin: 10px auto;
     }
+
+    .mobile-contact {
+        display: inline-block !important;
+        margin-left: 1rem;
+    }
+
+    .cssbuttons-io {
+        margin: 0.5rem;
+    }
 }
 
 /* Add a breakpoint for very small screens */
@@ -607,4 +637,9 @@ html {
 .aboutme.visible, .skills-div.visible, .projects-div.visible, .experience-div.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.mobile-contact {
+    display: none;
+    margin-left: 1rem;
 }
