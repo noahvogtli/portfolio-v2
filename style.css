@@ -429,14 +429,17 @@ body
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 .hero-content {
     flex: 1;
+    order: 1;
 }
 
 .hero-logo {
-    margin-left: 25%;
+    margin-left: 0;
+    order: 2;
 }
 
 @media screen and (max-width: 600px)
