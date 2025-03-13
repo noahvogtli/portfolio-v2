@@ -1,4 +1,3 @@
-
 .mulish {
   font-family: "Mulish", sans-serif;
   font-optical-sizing: auto;
@@ -425,18 +424,184 @@ body
   text-align: left;
 }
 
+.hero-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-logo {
+    margin-left: 25%;
+}
+
 @media screen and (max-width: 600px)
 {
-
-    .navbar-left
-    {
-        font-size: 24px;
-        width: 10%;
-    }
-
-    .sidebar
-    {
+    .navbar {
         display: none;
     }
-    
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 10vh;
+        text-align: center;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .hero-content {
+        width: 100%;
+        order: 2;
+        padding: 0 20px;
+    }
+
+    .hero-logo {
+        margin: 0;
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 80vw;
+        height: auto;
+        max-width: 200px;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    .background-logo {
+        width: 100vw;
+        height: auto;
+        max-width: none;
+        margin: 0;
+        display: block;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        width: 90vw;
+        margin: 0 auto 30px;
+        text-align: center;
+    }
+
+    .aboutme {
+        padding-top: 10%;
+    }
+
+    .aboutme p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .skills-box
+    {
+      width: 40%;
+      margin: 10px auto;
+    }
+
+
+    .projects-box, .experience-box {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 16px;
+    }
+
+    .contact-modal {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    .name-div {
+        flex-direction: column;
+    }
+
+    .name-div div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .name-div input {
+        width: 100%;
+    }
+
+    .submit-contact, .close-contact {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Add a breakpoint for very small screens */
+@media screen and (max-width: 400px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .aboutme p {
+        font-size: 14px;
+    }
+
+    .skills-box, .projects-box, .experience-box {
+        font-size: 14px;
+    }
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Initial page load animation */
+.content {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Scroll-triggered animations */
+.aboutme, .skills-div, .projects-div, .experience-div {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.aboutme.visible, .skills-div.visible, .projects-div.visible, .experience-div.visible {
+    opacity: 1;
+    transform: translateY(0);
 }

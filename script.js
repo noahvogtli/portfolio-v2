@@ -73,3 +73,41 @@ var js_form = document.getElementById(form_id_js);
 js_form.addEventListener("submit", function (e) {
     e.preventDefault();
 });
+
+// Initialize animations
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize scroll animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, observerOptions);
+
+    // Observe elements for scroll animations
+    const animatedElements = document.querySelectorAll('.aboutme, .skills-div, .projects-div, .experience-div');
+    animatedElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+});
