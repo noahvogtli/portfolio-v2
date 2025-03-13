@@ -627,6 +627,13 @@ body
 
     .cssbuttons-io {
         margin: 0.5rem;
+        width: 45%;
+        display: inline-block;
+    }
+
+    .cssbuttons-io span {
+        padding: 0.6em 1em 0.6em 0.85em;
+        font-size: 16px;
     }
 }
 
