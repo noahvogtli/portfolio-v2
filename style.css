@@ -347,6 +347,11 @@ body
   width: 90%;
 }
 
+.contact-modal input[type="email"] {
+  width: 95%;
+}
+
+
 .contact-modal textarea {
   height: 15vh;
   width: 95%;
@@ -554,26 +559,65 @@ body
     }
 
     .contact-modal {
-        width: 90vw;
+        width: 75vw;
         height: 80vh;
+        padding: 1.5rem;
+        margin: 0 auto;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .contact-modal h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-modal input,
+    .contact-modal textarea {
+        width: 90%;
+        padding: 0.8rem;
+        font-size: 16px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-modal input[type="email"] {
+      width: 90%;
+    }
+    
+
+    .contact-modal textarea {
+        height: 20vh;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-div label {
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
     }
 
     .name-div {
         flex-direction: column;
+        gap: 0.5rem;
     }
 
     .name-div div {
         width: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 0.5rem;
     }
 
-    .name-div input {
+    .submit-contact, 
+    .close-contact {
         width: 100%;
+        height: 3.5rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
     }
 
-    .submit-contact, .close-contact {
-        width: 90%;
-        margin: 10px auto;
+    .close-contact {
+        margin-top: 0.5rem;
     }
 
     .mobile-contact {
