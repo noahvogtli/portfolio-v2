@@ -29,13 +29,13 @@ var data_js = {
 };
 
 function js_onSuccess() {
-    window.location = window.location.pathname;
+    window.location.href = 'home.html';
     modal.close();
     alert('Message sent successfully')
 }
 
 function js_onError(error) {
-    window.location = window.location.pathname;
+    window.location.href = 'home.html';
 }
 
 var sendButton = document.getElementById("js_send");
