@@ -98,20 +98,27 @@
         <dialog class="contact-modal" id="contact-modal">
             <h1 style="font-style: italic;">Contact Me</h1>
             <div class="contact-div">
-                <form name="contact" method="POST" data-netlify="true">
-                    <p>
-                      <label>Your Name: <input type="text" name="name" /></label>
-                    </p>
-                    <p>
-                      <label>Your Email: <input type="email" name="email" /></label>
-                      <label>Message: <textarea name="message"></textarea></label>
-                    </p>
-                    <p>
-                      <button type="submit" class="submit-contact">Send</button>
-                      <button type="button" class="close-contact" id="close-contact">Close</button>
-                    </p>
-                  </form>
+                <form action="" id="javascript_form" netlify>
+                    <div class="name-div" >
+                        <div >
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" class="contact-message">
+                        </div>
+                        <div>
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" class="contact-message">
+                        </div>
+                    </div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="contact-message">
+                    <br><br>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="contact-message"></textarea>
+
+                </form>
             </div>
+            <button type="submit" id="js_send" value="Send" class="submit-contact">Submit</button>
+            <button class="close-contact" type="reset" id="close-contact">Close</button>
         </dialog>
         <div style="height: 10vh;"></div>
         <div>
