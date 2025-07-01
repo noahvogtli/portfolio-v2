@@ -491,7 +491,7 @@ body
 
 @media screen and (max-width: 600px)
 {
-    .navbar-right {
+    #homenav {
         display: none;
     }
 
@@ -506,8 +506,8 @@ body
         
     }
 
-    #versevision {
-      padding-top: 20dvh;
+    #versevision .navbar-right{
+        display: none;
     }
 
     .sidebar {
